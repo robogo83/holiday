@@ -92,5 +92,5 @@ while True:
         print(
             f"Total cost of your holiday in {city_flight} for {num_nights} nights, renting a car for {rental_days} days is: £{total_cost}")
         break
-    except Exception as e:
-        print(f"Wrong Input. Let's try again! Error: {e}")
+    except ValueError:
+        print(f"Wrong Input. Let's try again!")
