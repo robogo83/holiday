@@ -22,19 +22,18 @@ def plane_cost(city_flight):
     Barcelona: £120 
     Melbourne: £780
     '''
-    try:
-        if city_flight == 'New York':
-            return 450
-        elif city_flight == 'Roma':
-            return 80
-        elif city_flight == 'Barcelona':
-            return 120
-        elif city_flight == 'Melbourne':
-            return 780
-        else:
-            return "Invalid Destination. Try again!"
-    except ValueError as e:
-        return e
+
+    if city_flight == 'New York':
+        return 450
+    elif city_flight == 'Roma':
+        return 80
+    elif city_flight == 'Barcelona':
+        return 120
+    elif city_flight == 'Melbourne':
+        return 780
+    else:
+        return "Invalid Destination. Try again!"
+
 
 
 def car_rental(rental_days):
